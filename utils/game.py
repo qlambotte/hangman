@@ -31,7 +31,7 @@ class Hangman:
     lives : int
     word_to_find : str
     correctly_guessed_letters : list[str]
-    wrongly_guessed_letters : list[str]
+    wrongly_guessed_letters : Set[str]
     turn_count : int
     error_count : int
     """
