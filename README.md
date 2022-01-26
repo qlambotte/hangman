@@ -24,7 +24,7 @@ python3 main.py
 python3 main.py num_lives
 ```
 
-3. *With a list of words of your choice*. In this case, you will have to guess a word picked from your list with five lives. In the following command, ` path_to_file` is a path to a text file containing your words. It is assumed that there is *one word* per line.
+3. *With a list of words of your choice*. In this case, you will have to guess a word picked from your list with five lives. In the following command, ` path_to_file` is a path to a text file containing your words. It is assumed that there is *one word* per line and that the file contains the words becode, learning, mathematics and sessions.
 ```bash
 python3 main.py path_to_file
 ```
