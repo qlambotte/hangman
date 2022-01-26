@@ -2,7 +2,19 @@
 
 ## Description
 
-This repository contains an implementation of the game Hangman.
+This repository contains an implementation of the game Hangman. This game consists in guessing a word letter by letter with a fixed number of allowed mistakes (with repetitions). The default number of liines is 5 and the default list from wich a word is chosen from is `['becode', 'learning', 'mathematics', 'sessions']`. These parameters can be changed - see Instructions below. This repository is organized as follows:
+```
+hangman
+|
+└───utils
+|     └───game.py
+└───data
+|     └───data_good.txt
+|     └───data_wrong.txt
+└───main.py
+```
+
+The file `./utils/game.py` contains the core of the program. The textfiles in `./data/` contains words (one per line), the good one meets the requirements expaleined in the Instructions while the other does not.
 
 Contributor: Quentin Lambotte
 
@@ -10,7 +22,7 @@ Contributor: Quentin Lambotte
 
 The code needs python3 to run.
 
-## Instruction
+## Instructions
 
 You have four possibilities in order to run a game.
 
