@@ -1,5 +1,4 @@
 import re
-import typing as t
 from random import choice
 
 
@@ -18,7 +17,7 @@ class Hangman:
 
     Pramaeters
     ----------
-    possible_words : L[str]
+    possible_words : list[str]
         This is a list of words. This list must contain the words becode,
         learning, mathematics and sessions. The default value is
         ["becode", "learning", "mathematics", "sessions"].
@@ -28,11 +27,11 @@ class Hangman:
 
     Attributes
     ----------
-    possible_words : List[str]
+    possible_words : list[str]
     lives : int
     word_to_find : str
-    correctly_guessed_letters : List[str]
-    wrongly_guessed_letters : List[str]
+    correctly_guessed_letters : list[str]
+    wrongly_guessed_letters : list[str]
     turn_count : int
     error_count : int
     """
@@ -40,7 +39,7 @@ class Hangman:
     possible_words = ["becode", "learning", "mathematics", "sessions"]
 
     def __init__(
-        self, possible_words: t.List[str] = possible_words, lives: int = 5
+        self, possible_words: list[str] = possible_words, lives: int = 5
     ) -> None:
         """
         Constructor of the class.
