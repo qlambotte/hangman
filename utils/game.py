@@ -49,6 +49,11 @@ class Hangman:
         ---------
         possible_words : List[str]
         lives : int
+
+        Exception
+        ---------
+        Raises InvalidWordList if possible_words does not contain one of becode,
+        learning, mathematics, sessions.
         """
         if not all(
             s in possible_words
